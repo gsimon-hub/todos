@@ -44,6 +44,7 @@ function addTodo() {
         })
         .then(res => {
             console.log(res.data)
+            todos.value.unshift(res.data)
             vTodo.value = ''
             // router.push('/todo')
         })
